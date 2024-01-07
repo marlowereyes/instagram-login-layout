@@ -1,0 +1,61 @@
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 42px;;
+}
+
+.optionButtons {
+    width: 820px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.optionButtons > button {
+    border: none;
+    background-color: white;
+    font-size: 12px;
+    color: var(--dark-grey);
+}
+
+.copyright {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.copyright > button{
+    border: none;
+    background-color: white;
+    font-size: 12px;
+    color: var(--dark-grey);
+}
+
+/* iPhone XR */
+@media (min-width: 414px) and (max-width: 820px) {
+    .optionButtons {
+      width: 620px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .optionButtons > button {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+  }
+
+/* iPhone XR */
+@media (max-width: 414px) and (max-height: 896px){
+    .optionButtons {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+      }
+  
+      .optionButtons > button {
+          margin-left: 4px;
+          margin-right: 4px;
+          margin-bottom: 7px;
+      }
+}

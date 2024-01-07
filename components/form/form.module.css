@@ -1,0 +1,76 @@
+.formContainer {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form > input {
+    width: 260px;
+    height: 30px;
+    border: solid 0.8px var(--light-grey);
+    border-radius: 2px;
+    background-color: #fafafa;
+    padding: 5px;
+    padding-left: 7px;
+}
+
+.loginButton {
+    width: 268px;
+    height: 32px;
+    background-color: var(--light-blue);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.orDivide {
+    width: 268px;
+    height: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--dark-grey);
+}
+
+.divideLine {
+    border-top: solid 0.9px var(--light-grey);
+    width: 105px;
+}
+
+.facebook {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.facebook > button {
+    border: none;
+    background-color: white;
+    color: #385185;
+    font: system-ui;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.forgot {
+    color: #385185;
+    border: none;
+    background-color: white;
+    font-size: 12px;
+}
