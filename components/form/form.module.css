@@ -25,11 +25,11 @@
     padding-left: 7px;
 }
 
-.loginButton {
+.formContainer > Button {
     width: 268px;
     height: 32px;
     background-color: var(--light-blue);
-    color: white;
+    color: var(--white);
     border: none;
     border-radius: 7px;
     font-weight: bold;
@@ -47,7 +47,7 @@
     color: var(--dark-grey);
 }
 
-.divideLine {
+.orDivide > div {
     border-top: solid 0.9px var(--light-grey);
     width: 105px;
 }
@@ -59,17 +59,17 @@
     margin-top: 10px;
 }
 
-.facebook > button {
+.facebook > Button {
     border: none;
-    background-color: white;
-    color: #385185;
-    font: system-ui;
+    background-color: var(--white);
+    color: var(--navy-blue);
+    font: var(--main-font);
     font-size: 15px;
     font-weight: bold;
 }
 
-.forgot {
-    color: #385185;
+.forgotPass > Button {
+    color: var(--navy-blue);
     border: none;
     background-color: white;
     font-size: 12px;

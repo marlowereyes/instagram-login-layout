@@ -6,29 +6,35 @@
 }
 
 .optionButtons {
-    width: 820px;
+    width: 850px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.optionButtons > button {
+.optionButtons > Button {
     border: none;
-    background-color: white;
+    background-color: var(--white);
     font-size: 12px;
     color: var(--dark-grey);
 }
 
 .copyright {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 60px;
-}
-
-.copyright > button{
     border: none;
-    background-color: white;
+    background-color: var(--white);
     font-size: 12px;
     color: var(--dark-grey);
+    font-family: var(--main-font);
+}
+
+.select {
+    width: 60px;
+    font-size: 12px;
+    color: var(--dark-grey);
+    border: none;
+    margin-right: 5px;
 }
 
 /* iPhone XR */

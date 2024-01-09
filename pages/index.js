@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Form from '@/components/form'
 import Footer from '@/components/footer'
+import Button from '@/components/Button'
 
 export default function Home() {
   return (
@@ -14,46 +15,32 @@ export default function Home() {
         <link rel="icon" href="/igfavicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-      <div className={styles.mainContent}>
         <Image src={'/images/ig-phones.png'} alt="instagram phone" width={380} height={600} className={styles.phonePic}/>
         <div className={styles.smt}>
           <div className={styles.logIn}>
-            <div className={styles.wordmark}>
-              <Image src={'/images/wordmark-logo.png'} alt="instagram wordmark logo" width={175} height={70}/>
-            </div>
-            <div>
+            <Image src={'/images/wordmark-logo.png'} alt="instagram wordmark logo" width={175} height={63}/>
             <Form/>
-            </div>
           </div>
           <div className={styles.signUp}>
-            <p className={styles.question}>Don't have an account?</p>
-            <button className={styles.signUpButton}>Sign Up</button>
+            Don't have an account?
+            <Button title="Sign Up"/>
           </div>
           <div className={styles.getApp}>
-            <p>Get the app.</p>
+            Get the app.
             <div className={styles.getAppButtons}>
-              <button className={styles.appStore}>
-                <div>
+              <button>
                   <Image src={'/images/appleicon.png'} alt="apple icon logo" width={27} height={27}/>
-                </div>
-                <div>
                   <p id={styles.smalltextOne}>Dowload on the <span id={styles.largetextOne}>Apple Store</span></p>
-                </div>
               </button>
-              <button className={styles.googlePlay}>
-                <div>
+              <button>
                   <Image src={'/images/googleplayicon.png'} alt="google play icon logo" width={37} height={42}/>
-                </div>
-                <div>
                   <p id={styles.smalltextTwo}>GET IT ON <span id={styles.largetextTwo}>Google Play</span></p>
-                </div>
               </button>
             </div>
           </div>
         </div>
-      </div>
-      <Footer/>
       </main>
+      <Footer/>
     </>
   )
 }

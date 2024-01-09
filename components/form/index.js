@@ -1,5 +1,6 @@
 import styles from './form.module.css'
 import Image from 'next/image'
+import Button from '@/components/Button'
 
 export default function Form() {
     return(
@@ -20,17 +21,17 @@ export default function Form() {
                             placeholder="Password"
                         />
                 </form>
-                <button className={styles.loginButton}>Log in</button>
+                <Button title="Log in"/>
                 <div className={styles.orDivide}>
-                    <div className={styles.divideLine}></div>
+                    <div></div>
                     <p>OR</p>
-                    <div className={styles.divideLine}></div>
+                    <div></div>
                 </div>
                 <div className={styles.facebook}>
                     <Image src={'/images/fbfavicon.png'} alt="facebook icon" width={25} height={17}/>
-                    <button>Log in with Facebook</button>
+                    <Button title="Log in with Facebook"/>
                 </div>
-                <button className={styles.forgot}>Forgot password?</button>
+                <div className={styles.forgotPass}><Button title="Forgot password?"/></div>
             </div>
         </>
     )
